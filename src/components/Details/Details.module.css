@@ -1,0 +1,93 @@
+.details {
+    height: 100vh;
+    grid-area: details;
+    display: grid;
+    grid-template-rows: 8% 57% 35%;
+    background: #a4b0be;
+}
+
+.account {
+    background: #2f3640;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoMail {
+    font-size: 12px;
+}
+
+.date {
+    font-size: 17px;
+}
+
+.info {
+    background: #353b48;
+    padding: 15px 8px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.goals {
+    margin-top: 15px;
+}
+
+.goalsTitle {
+    color: #487eb0;
+}
+
+.goalsChecked b {
+    color: #487eb0;
+}
+
+.goalsLeft b,
+.ticketsLeft b {
+    color: #e1b12c;
+}
+
+.ticketsLeft {
+    margin-top: 15px;
+}
+
+.date {
+    color: #dcdde1;
+    text-align: center;
+}
+
+.notes {
+    background: #2f3640;
+}
+
+.notes textarea {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px;
+    background: #2f3640;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.notes textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.notes textarea::placeholder {
+    color: #dcdde198;
+}
+
+
+
+@media (max-width:992px) {
+    .details {
+        display: none;
+    }
+}

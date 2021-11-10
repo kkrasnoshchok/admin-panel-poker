@@ -1,0 +1,63 @@
+/* #region overall */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #c3cedd;
+}
+
+/* #endregion overall */
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+.detailsWrapper {
+    height: 100vh;
+}
+
+/* #region styling all the admin ltes styles */
+
+.nav-link span {
+    font-size: 20px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+}
+
+/* #endregion styling all the admin ltes styles */
+
+/* #region media queries */
+
+@media (max-width:1250px) {
+    .app {
+        grid-template-columns: 80% 20%;
+    }
+}
+
+@media (max-width:992px) {
+    .app {
+        grid-template-columns: 100%;
+    }
+    .detailsWrapper {
+        display: none;
+    }
+}
+
+/* #endregion media queries */
